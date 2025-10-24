@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Add particle effect to hero section (optional enhancement)
+// Add particle effect to hero section
 function createParticle() {
     const particle = document.createElement('div');
     particle.className = 'particle';
@@ -89,7 +89,7 @@ function createParticle() {
 // Generate particles periodically
 setInterval(createParticle, 300);
 
-// Add hover effect sound (optional - can be removed if too much)
+// Add hover effect for cards
 const cards = document.querySelectorAll('.about-card, .gaming-card, .project-card');
 cards.forEach(card => {
     card.addEventListener('mouseenter', () => {
@@ -111,20 +111,4 @@ heroLogo.addEventListener('click', () => {
     setTimeout(() => {
         heroLogo.style.transform = `rotate(${logoRotation}deg) scale(1)`;
     }, 300);
-});
-
-// Add glitch effect to title on hover (optional cool effect)
-const heroTitle = document.querySelector('.hero-title');
-let glitchInterval;
-
-heroTitle.addEventListener('mouseenter', () => {
-    let glitchCount = 0;
-    glitchInterval = setInterval(() => {
-        heroTitle.style.transform = `translate(${Math.random() * 4 - 2}px, ${Math.random() * 4 - 2}px)`;
-        glitchCount++;
-        if (glitchCount > 10) {
-            clearInterval(glitchInterval);
-            heroTitle.style.transform = 'translate(0, 0)';
-        }
-    }, 50);
 });
