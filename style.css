@@ -1646,4 +1646,18 @@ section {
   .gaming-card:hover {
     transform: translateY(-5px);
   }
+.logo-img, .hero-logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 0 20px #9333EA)
+          drop-shadow(0 0 30px #06B6D4)
+          drop-shadow(0 0 40px #10B981);
+  transition: filter 0.3s, transform 0.3s;
+}
+.logo-img:hover, .hero-logo:hover {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 40px #9333EA)
+          drop-shadow(0 0 60px #06B6D4)
+          drop-shadow(0 0 80px #10B981);
+}
 }
