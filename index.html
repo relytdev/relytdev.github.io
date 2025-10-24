@@ -4,289 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RELYT - Gamer • Developer • Content Creator</title>
-    <meta name="description" content="Tyler (relyt) - Passionate gamer, aspiring YouTuber, and software developer. Level up your game with epic content and code.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">RELYT</span>
+                <img src="relyt-logo.png" alt="RELYT Logo" class="logo-img">
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#gaming" class="nav-link">Gaming</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <canvas id="particles-canvas"></canvas>
+    <section class="hero" id="home">
+        <div class="hero-bg-particles"></div>
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="glitch-text" data-text="RELYT">RELYT</span>
-            </h1>
-            <p class="hero-tagline">
-                <span class="typing-text">Gamer • Developer • Content Creator</span>
-            </p>
+            <img src="relyt-logo.png" alt="RELYT Logo" class="hero-logo">
+            <h1 class="hero-title">RELYT</h1>
+            <p class="hero-subtitle">Gamer • Developer • Content Creator</p>
+            <p class="hero-description">Hey, I'm Tyler - better known in the gaming world as relyt. I'm a passionate gamer, aspiring YouTuber, and software developer building my online presence. I love creating content, crushing games, and writing code.</p>
             <div class="hero-buttons">
-                <a href="#gaming" class="btn btn-primary">Watch My Content</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about fade-in-section">
+    <section class="section" id="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>🎮</span>
-                        <div class="glow-effect"></div>
-                    </div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Passionate about competitive gaming, streaming, and building a YouTube presence. Main games: Minecraft, Call of Duty, Counter-Strike 2.</p>
                 </div>
-                <div class="about-text">
-                    <h2>Level Up With Me</h2>
-                    <p>Hey, I'm Tyler - better known in the gaming world as relyt. I'm a passionate gamer, aspiring YouTuber, and software developer building my online presence. I love creating content, crushing games, and writing code.</p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Games Played</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="250">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Hours Streamed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Projects Built</span>
-                        </div>
-                    </div>
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Software developer and IT enthusiast. Building web applications, learning new technologies, and creating tools that matter.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📹</div>
+                    <h3>Content Creation</h3>
+                    <p>Creating gaming content, tutorials, and sharing my journey as a developer and gamer on YouTube and social media.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gaming Section -->
-    <section id="gaming" class="gaming fade-in-section">
+    <section class="section section-dark" id="gaming">
         <div class="container">
-            <h2 class="section-title">Gaming &amp; Content</h2>
+            <h2 class="section-title">Gaming Content</h2>
             <div class="gaming-grid">
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">🎯</span>
+                    <div class="card-header">
+                        <span class="card-badge">Highlights</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Epic Gaming Moments</h3>
-                        <p>Best highlights compilation</p>
-                    </div>
+                    <h3>Best highlights compilation</h3>
+                    <p>Check out my top gaming moments and epic plays</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">⭐</span>
+                    <div class="card-header">
+                        <span class="card-badge">Analysis</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Game Reviews &amp; Tips</h3>
-                        <p>In-depth analysis</p>
-                    </div>
+                    <h3>In-depth analysis</h3>
+                    <p>Strategy breakdowns and gameplay reviews</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">🔴</span>
+                    <div class="card-header">
+                        <span class="card-badge">Full Games</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Live Stream VODs</h3>
-                        <p>Full gameplay sessions</p>
-                    </div>
+                    <h3>Full gameplay sessions</h3>
+                    <p>Uncut gameplay with live commentary</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">🎓</span>
+                    <div class="card-header">
+                        <span class="card-badge">Tutorials</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Tutorial Series</h3>
-                        <p>Level up your skills</p>
-                    </div>
+                    <h3>Level up your skills</h3>
+                    <p>Tips, tricks, and guides to improve your game</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">📰</span>
+                    <div class="card-header">
+                        <span class="card-badge">Updates</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Gaming News</h3>
-                        <p>Latest updates</p>
-                    </div>
+                    <h3>Latest updates</h3>
+                    <p>News, patches, and meta discussions</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
                 <div class="gaming-card">
-                    <div class="card-image">
-                        <span class="placeholder-icon">🏆</span>
+                    <div class="card-header">
+                        <span class="card-badge">Live</span>
                     </div>
-                    <div class="card-content">
-                        <h3>Community Challenges</h3>
-                        <p>Join the fun</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gaming-cta">
-                <a href="#youtube" class="btn btn-primary">▶ Subscribe on YouTube</a>
-                <div class="platform-links">
-                    <a href="#twitch" class="platform-btn">📺 Twitch</a>
-                    <a href="#discord" class="platform-btn">💬 Discord</a>
+                    <h3>Join the fun</h3>
+                    <p>Live streams and community events</p>
+                    <a href="#" class="card-link">Watch Now →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects fade-in-section">
+    <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title">My Code</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Gaming Dashboard</h3>
-                        <a href="#github" class="project-link">🔗</a>
+                        <h3>Gaming Stats Tracker</h3>
+                        <span class="project-status status-active">Active</span>
                     </div>
-                    <p>Real-time stats tracker for competitive gaming with leaderboards and analytics</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Socket.io</span>
+                    <p class="project-description">Real-time stats tracker for competitive gaming with leaderboards and analytics</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">API</span>
                     </div>
-                    <button class="btn btn-outline">View Code</button>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Stream Overlay Tool</h3>
-                        <a href="#github" class="project-link">🔗</a>
+                        <h3>Stream Overlay Generator</h3>
+                        <span class="project-status status-active">Active</span>
                     </div>
-                    <p>Custom overlay generator for Twitch/YouTube streams with widgets</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">WebGL</span>
+                    <p class="project-description">Custom overlay generator for Twitch/YouTube streams with widgets</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
                     </div>
-                    <button class="btn btn-outline">View Code</button>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Discord Bot</h3>
-                        <a href="#github" class="project-link">🔗</a>
+                        <span class="project-status status-development">In Dev</span>
                     </div>
-                    <p>Multi-purpose bot for gaming communities with moderation and fun commands</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Discord.py</span>
-                        <span class="tech-tag">SQLite</span>
+                    <p class="project-description">Multi-purpose bot for gaming communities with moderation and fun commands</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Discord.py</span>
+                        <span class="tag">SQLite</span>
                     </div>
-                    <button class="btn btn-outline">View Code</button>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Portfolio Site</h3>
-                        <a href="#github" class="project-link">🔗</a>
+                        <h3>Personal Portfolio</h3>
+                        <span class="project-status status-active">Active</span>
                     </div>
-                    <p>This awesome website you're looking at right now!</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
+                    <p class="project-description">This awesome website you're looking at right now!</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
                     </div>
-                    <button class="btn btn-outline">View Code</button>
+                    <a href="#" class="project-link">View Project →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills fade-in-section">
+    <section class="section section-dark" id="contact">
         <div class="container">
-            <div class="skills-grid">
-                <div class="skills-column">
-                    <h3>Gaming Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">🎯 FPS Games</div>
-                        <div class="skill-item">🧠 Strategy &amp; MOBA</div>
-                        <div class="skill-item">🗡️ RPG &amp; Adventure</div>
-                        <div class="skill-item">📺 Streaming</div>
-                        <div class="skill-item">🎬 Video Editing</div>
-                        <div class="skill-item">🎙️ Commentary</div>
-                    </div>
-                </div>
-                <div class="skills-column">
-                    <h3>Dev Skills</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">💻 HTML/CSS/JS</div>
-                        <div class="skill-item">⚛️ React &amp; Node.js</div>
-                        <div class="skill-item">🐍 Python</div>
-                        <div class="skill-item">🔗 Git &amp; GitHub</div>
-                        <div class="skill-item">📱 Responsive Design</div>
-                        <div class="skill-item">🔌 API Integration</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact fade-in-section">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
+            <h2 class="section-title">Get in Touch</h2>
             <div class="contact-content">
+                <p class="contact-text">Want to collaborate, chat about games, or discuss a project? Feel free to reach out!</p>
                 <div class="social-links">
-                    <a href="#youtube" class="social-btn youtube">▶ YouTube</a>
-                    <a href="#twitch" class="social-btn twitch">📺 Twitch</a>
-                    <a href="#discord" class="social-btn discord">💬 Discord</a>
-                    <a href="#github" class="social-btn github">🔗 GitHub</a>
-                    <a href="#twitter" class="social-btn twitter">🐦 Twitter</a>
-                    <a href="#instagram" class="social-btn instagram">📷 Instagram</a>
-                </div>
-                <div class="contact-form">
-                    <h3>Drop Me a Message</h3>
-                    <form id="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                    <div class="newsletter">
-                        <h4>Stay Updated</h4>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Email for updates">
-                            <button class="btn btn-secondary">Subscribe</button>
-                        </div>
-                    </div>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Discord">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26l8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12c0 5.302 3.438 9.8 8.207 11.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416c-.546-1.387-1.333-1.756-1.333-1.756c-1.089-.745.083-.729.083-.729c1.205.084 1.839 1.237 1.839 1.237c1.07 1.834 2.807 1.304 3.492.997c.107-.775.418-1.305.762-1.604c-2.665-.305-5.467-1.334-5.467-5.931c0-1.311.469-2.381 1.236-3.221c-.124-.303-.535-1.524.117-3.176c0 0 1.008-.322 3.301 1.23c.957-.266 1.983-.399 3.003-.404c1.02.005 2.047.138 3.006.404c2.291-1.552 3.297-1.23 3.297-1.23c.653 1.653.242 2.874.118 3.176c.77.84 1.235 1.911 1.235 3.221c0 4.609-2.807 5.624-5.479 5.921c.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576c4.765-1.589 8.199-6.086 8.199-11.386c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Tyler (Relyt). Level Up Your Game.</p>
-                <button id="back-to-top" class="back-to-top">↑</button>
-            </div>
+            <p>&copy; 2025 RELYT. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
