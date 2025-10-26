@@ -1,30 +1,19 @@
 const subtitleElement = document.querySelector('.hero-subtitle');
-const phrases = ['Gamer', 'Developer', 'Creator'];
-let phraseIndex = 0;
+const fullPhrase = 'Gamer • Developer • Creator';
 let charIndex = 0;
-let isDeleting = false;
 
-function typeLoop() {
-    const currentPhrase = phrases[phraseIndex];
-    let display = currentPhrase.substring(0, charIndex);
-    
-    subtitleElement.innerHTML = display + '<span class="cursor">|</span>';
-
-    if (!isDeleting && charIndex <= currentPhrase.length) {
+function typeOnce() {
+    if (charIndex <= fullPhrase.length) {
+        subtitleElement.innerHTML = fullPhrase.substring(0, charIndex) + '<span class="cursor">|</span>';
         charIndex++;
-        setTimeout(typeLoop, 110);
-    } else if (isDeleting && charIndex >= 0) {
-        charIndex--;
-        setTimeout(typeLoop, 60);
-    } else if (!isDeleting && charIndex > currentPhrase.length) {
-        setTimeout(() => { isDeleting = true; typeLoop(); }, 1400);
-    } else if (isDeleting && charIndex < 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        setTimeout(typeLoop, 350);
+        setTimeout(typeOnce, 80);
+    } else {
+        subtitleElement.innerHTML = fullPhrase + '<span class="cursor">|</span>';
+        // Optional: If you want it to erase and re-type, you can call erase() here instead.
     }
 }
 
 window.addEventListener('load', () => {
-    typeLoop();
+    subtitleElement.textContent = '';
+    setTimeout(typeOnce, 200);
 });
